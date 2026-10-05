@@ -3,10 +3,10 @@ import google.generativeai as genai
 
 st.title("AI Web App")
 
-api_key = st.text_input("Gemini API Key درج کریں:", type="password")
+api_key = st.text_input("Gemini API Key Ask your question", type="password")
 user_input = st.text_input("اپنا سوال:")
 
-if st.button("جواب حاصل کریں"):
+if st.button("Get Answer"):
     if api_key and user_input:
         try:
             genai.configure(api_key=api_key)
